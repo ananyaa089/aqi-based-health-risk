@@ -1,0 +1,5 @@
+severity,tier,share_of_station_days_alerted,precision,recall,false_alarms,missed
+300,standard alert,0.466,0.723,0.957,883,104
+300,high-confidence alert,0.383,0.833,0.907,438,225
+400,standard alert,0.265,0.518,0.921,875,81
+400,high-confidence alert,0.075,0.828,0.418,89,594

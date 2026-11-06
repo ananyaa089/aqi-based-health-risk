@@ -1,0 +1,67 @@
+model,feature,mean_abs_contribution
+AQI forecast +1 day,today's AQI,60.876
+AQI forecast +1 day,AQI 1 days ago,0.393
+AQI forecast +1 day,AQI 2 days ago,0.291
+AQI forecast +1 day,AQI 3 days ago,1.136
+AQI forecast +1 day,AQI 7 days ago,1.882
+AQI forecast +1 day,3-day mean AQI,8.668
+AQI forecast +1 day,7-day mean AQI,10.113
+AQI forecast +1 day,3-day AQI trend,0.877
+AQI forecast +1 day,city-wide AQI today,4.314
+AQI forecast +1 day,station-vs-city gap,1.227
+AQI forecast +1 day,time of year,5.419
+AQI forecast +1 day,station,1.935
+AQI forecast +1 day,temperature,3.783
+AQI forecast +1 day,humidity,3.952
+AQI forecast +1 day,wind speed,1.463
+AQI forecast +1 day,pressure,2.951
+AQI forecast +1 day,rainfall,6.97
+AQI forecast +1 day,change in temperature,2.838
+AQI forecast +1 day,change in humidity,1.761
+AQI forecast +1 day,change in wind speed,6.118
+AQI forecast +1 day,change in pressure,2.448
+AQI forecast +1 day,change in rainfall,3.931
+Severe alert AQI>=300,today's AQI,1.118
+Severe alert AQI>=300,AQI 1 days ago,0.029
+Severe alert AQI>=300,AQI 2 days ago,0.026
+Severe alert AQI>=300,AQI 3 days ago,0.05
+Severe alert AQI>=300,AQI 7 days ago,0.191
+Severe alert AQI>=300,3-day mean AQI,0.09
+Severe alert AQI>=300,7-day mean AQI,0.863
+Severe alert AQI>=300,3-day AQI trend,0.053
+Severe alert AQI>=300,city-wide AQI today,0.285
+Severe alert AQI>=300,station-vs-city gap,0.191
+Severe alert AQI>=300,time of year,0.478
+Severe alert AQI>=300,station,0.132
+Severe alert AQI>=300,temperature,0.228
+Severe alert AQI>=300,humidity,0.284
+Severe alert AQI>=300,wind speed,0.11
+Severe alert AQI>=300,pressure,0.222
+Severe alert AQI>=300,rainfall,0.197
+Severe alert AQI>=300,change in temperature,0.116
+Severe alert AQI>=300,change in humidity,0.054
+Severe alert AQI>=300,change in wind speed,0.147
+Severe alert AQI>=300,change in pressure,0.069
+Severe alert AQI>=300,change in rainfall,0.073
+Severe alert AQI>=400,today's AQI,1.01
+Severe alert AQI>=400,AQI 1 days ago,0.028
+Severe alert AQI>=400,AQI 2 days ago,0.04
+Severe alert AQI>=400,AQI 3 days ago,0.104
+Severe alert AQI>=400,AQI 7 days ago,0.199
+Severe alert AQI>=400,3-day mean AQI,0.387
+Severe alert AQI>=400,7-day mean AQI,0.508
+Severe alert AQI>=400,3-day AQI trend,0.061
+Severe alert AQI>=400,city-wide AQI today,0.126
+Severe alert AQI>=400,station-vs-city gap,0.168
+Severe alert AQI>=400,time of year,0.783
+Severe alert AQI>=400,station,0.182
+Severe alert AQI>=400,temperature,0.527
+Severe alert AQI>=400,humidity,0.279
+Severe alert AQI>=400,wind speed,0.229
+Severe alert AQI>=400,pressure,0.321
+Severe alert AQI>=400,rainfall,0.232
+Severe alert AQI>=400,change in temperature,0.136
+Severe alert AQI>=400,change in humidity,0.079
+Severe alert AQI>=400,change in wind speed,0.167
+Severe alert AQI>=400,change in pressure,0.113
+Severe alert AQI>=400,change in rainfall,0.134

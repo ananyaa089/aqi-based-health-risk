@@ -1,0 +1,3 @@
+severity,base_rate,PR_AUC_model,PR_AUC_ci,PR_AUC_today_rule,gain,gain_ci,alert_precision,alert_recall,alert_days
+300,0.352,0.951,"[0.912, 0.975]",0.921,0.03,"[+0.017, +0.050]",0.72,0.96,3191
+400,0.149,0.765,"[0.648, 0.838]",0.743,0.022,"[-0.026, +0.071]",0.52,0.92,1815

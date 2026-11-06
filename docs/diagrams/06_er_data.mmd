@@ -1,0 +1,57 @@
+erDiagram
+  STATION ||--o{ HOURLY_OBS : records
+  STATION ||--o{ DAILY_FEATURES : summarised_as
+  DAILY_FEATURES ||--o{ FORECAST : produces
+  FORECAST ||--o| ALERT : triggers
+  WEEKLY_CITY ||--o{ SEARCH_INDEX : compared_with
+  STATION {
+    string station_name PK
+    float latitude
+    float longitude
+  }
+  HOURLY_OBS {
+    string station FK
+    datetime timestamp_ist
+    float aqi
+    string aqi_source
+    float pm2_5
+    float pm10
+  }
+  DAILY_FEATURES {
+    string station FK
+    date date
+    float aqi_lag0
+    float aqi_roll3
+    float aqi_roll7
+    float city_aqi_lag0
+    float weather_city
+  }
+  FORECAST {
+    string station FK
+    date issue_date
+    int horizon_days
+    float predicted_aqi
+    float range_low
+    float range_high
+    float actual_aqi
+  }
+  ALERT {
+    string station FK
+    date issue_date
+    int severity_level
+    float probability
+    bool standard_alert
+    bool high_confidence_alert
+    string why_text
+  }
+  WEEKLY_CITY {
+    date week_start PK
+    float aqi_mean
+    float aqi_worst_station
+  }
+  SEARCH_INDEX {
+    date week_start FK
+    float cough
+    float asthma
+    float inhaler
+  }

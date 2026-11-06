@@ -1,0 +1,27 @@
+flowchart TB
+  S1["External: station files"]
+  S2["External: Open-Meteo / CAMS"]
+  S3["External: Google Trends"]
+  U1["External: users"]
+  U2["External: evaluators"]
+  P1(("1.0 Parse and clean"))
+  P2(("2.0 Compute AQI and merge"))
+  P3(("3.0 Build features"))
+  P4(("4.0 Train and forecast"))
+  P5(("5.0 Evaluate and calibrate"))
+  P6(("6.0 Export and display"))
+  D1[("D1 Raw files")]
+  D2[("D2 Master hourly dataset")]
+  D3[("D3 Daily features")]
+  D4[("D4 Forecasts and alerts")]
+  D5[("D5 Evidence tables and figures")]
+  S1 --> D1 --> P1 --> P2
+  S2 --> P2
+  P2 --> D2 --> P3 --> D3 --> P4 --> D4
+  D4 --> P5 --> D5
+  S3 --> P5
+  S2 --> P5
+  D4 --> P6
+  D5 --> P6
+  P6 --> U1
+  P6 --> U2

@@ -1,0 +1,31 @@
+horizon,station,n,mean_bias,MAE
+1,Anand Vihar,623,-7.9,39.2
+1,Ashok Vihar,721,-0.7,28.1
+1,Aya Nagar,721,5.3,30.9
+1,Bawana,723,-3.7,29.0
+1,Burari Crossing,682,4.1,27.7
+1,CRRI Mathura Road,651,5.8,27.9
+1,Chandni Chowk,542,-1.3,32.5
+1,DTU,713,5.4,32.4
+1,Dwarka Sector 8,725,-1.3,30.1
+1,R K Puram,719,0.7,27.6
+3,Anand Vihar,607,-15.8,62.4
+3,Ashok Vihar,719,-4.9,43.7
+3,Aya Nagar,719,2.6,43.1
+3,Bawana,721,-10.3,45.6
+3,Burari Crossing,673,1.8,45.1
+3,CRRI Mathura Road,647,3.4,43.8
+3,Chandni Chowk,517,-5.7,49.8
+3,DTU,711,4.5,47.8
+3,Dwarka Sector 8,723,-6.4,45.8
+3,R K Puram,713,-3.6,43.4
+7,Anand Vihar,596,-16.3,68.5
+7,Ashok Vihar,715,-4.6,48.3
+7,Aya Nagar,715,4.6,48.6
+7,Bawana,717,-8.7,50.7
+7,Burari Crossing,665,2.9,50.1
+7,CRRI Mathura Road,639,5.5,49.0
+7,Chandni Chowk,521,-3.6,56.4
+7,DTU,708,6.0,54.4
+7,Dwarka Sector 8,719,-5.5,51.0
+7,R K Puram,709,-2.9,47.6

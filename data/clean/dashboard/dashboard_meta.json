@@ -1,0 +1,16 @@
+{
+  "trained_through": "2023-12-31",
+  "replay_start": "2024-01-01",
+  "thresholds": {
+    "300": 0.18,
+    "400": 0.06
+  },
+  "thresholds_hi": {
+    "300": 0.38,
+    "400": 0.65
+  },
+  "interval_nominal": 0.8,
+  "interval_margin_h1": 7.3,
+  "interval_margin_h2": 11.9,
+  "interval_margin_h3": 11.8
+}

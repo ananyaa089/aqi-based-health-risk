@@ -1,0 +1,11 @@
+# full pipeline (scripts/, tests/)
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+xgboost>=2.0
+matplotlib>=3.8
+requests>=2.31
+pytrends>=4.9
+streamlit>=1.40
+pydeck>=0.9
+pytest>=8.0

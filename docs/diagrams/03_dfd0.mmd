@@ -1,0 +1,12 @@
+flowchart LR
+  S1["External: CPCB / DPCC / IMD<br/>station data (OpenCity)"]
+  S2["External: Open-Meteo<br/>weather, CAMS"]
+  S3["External: Google Trends"]
+  U1["External: Residents,<br/>health planners, officers"]
+  U2["External: Evaluators"]
+  SYS(("0<br/>Delhi AQI early-warning system"))
+  S1 -- "raw AQI / pollutant records" --> SYS
+  S2 -- "weather, modelled PM" --> SYS
+  S3 -- "search interest" --> SYS
+  SYS -- "forecasts, ranges, alerts,<br/>advisories, burden tier" --> U1
+  SYS -- "evidence tables, figures,<br/>tests, replay mode" --> U2

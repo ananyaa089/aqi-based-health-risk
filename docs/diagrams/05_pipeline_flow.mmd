@@ -1,0 +1,19 @@
+flowchart TD
+  S(["Start"]) --> L["Load station files"]
+  L --> F{"File type?"}
+  F -- "2017-23 wide" --> P1["Parse month blocks to hourly AQI<br/>source = reported"]
+  F -- "2024-25 15-minute" --> P2["Convert UTC to IST, resample hourly<br/>compute AQI, source = computed"]
+  P1 --> M["Merge 10 stations on a regular hourly grid + weather"]
+  P2 --> M
+  M --> DAY["Daily station means<br/>keep days with at least 12 valid hours"]
+  DAY --> FE["Features from information up to today only"]
+  FE --> SP{"Time-ordered split"}
+  SP --> A["Block A: train to 2021, tune 2022, test 2023"]
+  SP --> B["Block B: train to 2022, tune 2023, test 2024-25"]
+  A --> T["Train regressors, quantile models, classifiers"]
+  B --> T
+  T --> TH["Pick alert thresholds on tuning year, then freeze"]
+  TH --> EV["Evaluate on test only: MAE, skill, CIs,<br/>PR-AUC, calibration, coverage"]
+  EV --> X["Export replay forecasts for 2024-25"]
+  X --> UI["Dashboard"]
+  UI --> E(["End"])

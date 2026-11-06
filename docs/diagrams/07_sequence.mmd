@@ -1,0 +1,16 @@
+sequenceDiagram
+  actor User
+  participant UI as Streamlit dashboard
+  participant DB as dashboard_data.csv
+  participant EV as Evidence tables
+  User->>UI: choose issue date
+  UI->>DB: load rows for that date
+  DB-->>UI: forecasts, ranges, probabilities, alert flags, why text
+  UI->>UI: map AQI to category colour and burden tier
+  UI-->>User: map, table with ranges, advisories
+  User->>UI: tick reveal what actually happened
+  UI-->>User: actual daily AQI for +1, +2, +3 days
+  User->>UI: open evidence tab
+  UI->>EV: read skill, calibration, coverage tables
+  EV-->>UI: results and figures
+  UI-->>User: evidence and limitations

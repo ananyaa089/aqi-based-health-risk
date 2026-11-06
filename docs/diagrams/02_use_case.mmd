@@ -1,0 +1,32 @@
+flowchart LR
+  R(["Resident / vulnerable person"])
+  H(["Clinician / hospital planner"])
+  P(["Pollution-control or health officer"])
+  V(["Evaluator / student"])
+  subgraph SYS["Delhi AQI early-warning system"]
+    U1(["View 1-3 day forecast by station"])
+    U2(["See 80 percent range"])
+    U3(["Receive severe-pollution alert<br/>standard or high-confidence"])
+    U4(["Read plain-language advisory"])
+    U5(["See why an alert fired"])
+    U6(["See respiratory-burden tier"])
+    U7(["Replay a past date and<br/>reveal the actual outcome"])
+    U8(["Inspect model evidence<br/>skill, calibration, limits"])
+    U9(["Compare station history<br/>vs persistence"])
+  end
+  R --> U1
+  R --> U3
+  R --> U4
+  H --> U1
+  H --> U3
+  H --> U6
+  P --> U1
+  P --> U3
+  P --> U5
+  P --> U9
+  V --> U7
+  V --> U8
+  V --> U5
+  U1 -. includes .-> U2
+  U3 -. includes .-> U5
+  U4 -. extends .-> U6
